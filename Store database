@@ -1,0 +1,12 @@
+CREATE TABLE Footwear (id INTEGER PRIMARY KEY, brand TEXT, style TEXT, color TEXT, price INTEGER, inventory INTEGER);
+
+INSERT INTO Footwear VALUES (1, "Doc Martens", "boots", "black", 170, 29);
+INSERT INTO Footwear VALUES (2, "Nike", "lifestyle", "white", 100, 20);
+INSERT INTO Footwear VALUES (3, "Vans", "lifestyle", "gray", 55, 56);
+INSERT INTO Footwear VALUES (4, "Nike", "running", "multi", 120, 14);
+INSERT INTO Footwear VALUES (5, "Doc Martens", "slip_on", "brown", 150, 12);
+INSERT INTO Footwear VALUES (6, "Vans", "slides", "black", 20, 50);
+
+SELECT * FROM Footwear ORDER BY price;
+
+SELECT * FROM Footwear WHERE inventory > 20;
